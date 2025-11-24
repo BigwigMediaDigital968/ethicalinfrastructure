@@ -14,7 +14,7 @@ const OurSegments = () => {
   const segments = [
     {
       title: "Builder Floors",
-      href: "/buy?type=builder-floor", // 👈 added link
+      href: "/buy", // 👈 added link
       images: [
         "https://res.cloudinary.com/dcq2oziz4/image/upload/v1761300453/IMG_3345_tuyjaj.jpg",
         "https://res.cloudinary.com/dcq2oziz4/image/upload/v1761300452/IMG_3351_c20c6n.jpg",
@@ -30,7 +30,7 @@ const OurSegments = () => {
     },
     {
       title: "Villa (Kothis)",
-      href: "/buy?type=villa", // 👈 added link
+      href: "/buy", // 👈 added link
 
       images: [
         "https://res.cloudinary.com/dcq2oziz4/image/upload/v1761306318/IMG_1413_v989ao.jpg",
@@ -43,7 +43,7 @@ const OurSegments = () => {
     },
     {
       title: "Apartments",
-      href: "/buy?type=apartment", // 👈 added link
+      href: "/buy", // 👈 added link
 
       images: [
         "https://res.cloudinary.com/dasczew6y/image/upload/v1760357906/Ethical/images/Screenshot%202025-10-13%20131016.png",
@@ -193,11 +193,9 @@ const OurSegments = () => {
               </h3>
 
               {/* 👇 View Details Button */}
-              <ButtonFill
-                text="View Details"
-                className="w-full"
-                onClick={() => router.push(segment.href)}
-              />
+              <Link href={`${segment.href}`}>
+                <ButtonFill text="View Details" className="w-full" />
+              </Link>
             </div>
           </div>
         ))}

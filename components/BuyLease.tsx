@@ -6,6 +6,7 @@ import buyImage from "../assets/Bug Your Dream home.png";
 import sellImage from "../assets/Sell Your House Easily.png";
 import leaseImage from "../assets/Lease your Property.png";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export default function BuyLeaseSection() {
   const [activeTab, setActiveTab] = useState<"buy" | "sell" | "lease">("buy");
@@ -69,76 +70,83 @@ export default function BuyLeaseSection() {
             {/* ===== DESKTOP HOVER & CLICK ===== */}
             <div className="hidden md:block space-y-4">
               {/* BUY */}
-              <div
-                className="relative flex items-center cursor-pointer group"
-                onMouseEnter={() => setActiveTab("buy")}
-                onClick={() => handleRedirect("/buy")}
-              >
-                <h2
-                  className={`text-5xl tracking-wider transition-colors duration-300 ${
-                    activeTab === "buy" ? "text-[var(--title)] font-bold" : ""
-                  }`}
-                >
-                  BUY
-                </h2>
+              <Link href="/buy">
                 <div
-                  className={`relative ml-6 h-[1px] bg-[var(--black)] transition-all duration-300 ${
-                    activeTab === "buy" ? "w-32" : "w-6"
-                  }`}
+                  className="relative flex items-center cursor-pointer group"
+                  onMouseEnter={() => setActiveTab("buy")}
                 >
-                  <span className="absolute -right-2 md:-top-3.5 text-[var(--black)] text-xl">
-                    &gt;
-                  </span>
+                  <h2
+                    className={`text-5xl tracking-wider transition-colors duration-300 ${
+                      activeTab === "buy" ? "text-[var(--title)] font-bold" : ""
+                    }`}
+                  >
+                    BUY
+                  </h2>
+                  <div
+                    className={`relative ml-6 h-[1px] bg-[var(--black)] transition-all duration-300 ${
+                      activeTab === "buy" ? "w-32" : "w-6"
+                    }`}
+                  >
+                    <span className="absolute -right-2 md:-top-3.5 text-[var(--black)] text-xl">
+                      &gt;
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               {/* SELL */}
-              <div
-                className="relative flex items-center cursor-pointer group"
-                onMouseEnter={() => setActiveTab("sell")}
-                onClick={() => handleRedirect("/sell")}
-              >
-                <h2
-                  className={`text-5xl tracking-wider transition-colors duration-300 ${
-                    activeTab === "sell" ? "text-[var(--title)] font-bold" : ""
-                  }`}
-                >
-                  SELL
-                </h2>
+              <Link href="/sell">
                 <div
-                  className={`relative ml-6 h-[1px] bg-[var(--black)] transition-all duration-300 ${
-                    activeTab === "sell" ? "w-32" : "w-6"
-                  }`}
+                  className="relative flex items-center cursor-pointer group"
+                  onMouseEnter={() => setActiveTab("sell")}
                 >
-                  <span className="absolute -right-2 md:-top-3.5 text-[var(--black)] text-xl">
-                    &gt;
-                  </span>
+                  <h2
+                    className={`text-5xl tracking-wider transition-colors duration-300 ${
+                      activeTab === "sell"
+                        ? "text-[var(--title)] font-bold"
+                        : ""
+                    }`}
+                  >
+                    SELL
+                  </h2>
+                  <div
+                    className={`relative ml-6 h-[1px] bg-[var(--black)] transition-all duration-300 ${
+                      activeTab === "sell" ? "w-32" : "w-6"
+                    }`}
+                  >
+                    <span className="absolute -right-2 md:-top-3.5 text-[var(--black)] text-xl">
+                      &gt;
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               {/* LEASE */}
-              <div
-                className="relative flex items-center cursor-pointer group"
-                onMouseEnter={() => setActiveTab("lease")}
-                onClick={() => handleRedirect("/lease")}
-              >
-                <h2
-                  className={`text-5xl tracking-wider transition-colors duration-300 ${
-                    activeTab === "lease" ? "text-[var(--title)] font-bold" : ""
-                  }`}
-                >
-                  LEASE
-                </h2>
+              <Link href="/lease">
                 <div
-                  className={`relative ml-6 h-[1px] bg-[var(--black)] transition-all duration-300 ${
-                    activeTab === "lease" ? "w-32" : "w-6"
-                  }`}
+                  className="relative flex items-center cursor-pointer group"
+                  onMouseEnter={() => setActiveTab("lease")}
                 >
-                  <span className="absolute -right-2 md:-top-3.5 text-[var(--black)] text-xl">
-                    &gt;
-                  </span>
+                  <h2
+                    className={`text-5xl tracking-wider transition-colors duration-300 ${
+                      activeTab === "lease"
+                        ? "text-[var(--title)] font-bold"
+                        : ""
+                    }`}
+                  >
+                    LEASE
+                  </h2>
+                  <div
+                    className={`relative ml-6 h-[1px] bg-[var(--black)] transition-all duration-300 ${
+                      activeTab === "lease" ? "w-32" : "w-6"
+                    }`}
+                  >
+                    <span className="absolute -right-2 md:-top-3.5 text-[var(--black)] text-xl">
+                      &gt;
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <p className="text-[var(--text)] mt-6 text-sm md:text-base leading-relaxed max-w-md text-center md:text-left">

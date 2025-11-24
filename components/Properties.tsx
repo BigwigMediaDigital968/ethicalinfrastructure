@@ -13,6 +13,7 @@ import ButtonFill from "./Button";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 interface Property {
   _id: string;
@@ -115,12 +116,9 @@ export default function PropertyGrid() {
                         <FaRulerCombined /> {property.areaSqft}
                       </div>
                     </div>
-
-                    <ButtonFill
-                      text="View Details"
-                      className="w-full mt-4"
-                      onClick={() => router.push(`/buy/${property.slug}`)}
-                    />
+                    <Link href={`/buy/${property.slug}`}>
+                      <ButtonFill text="View Details" className="w-full mt-4" />
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -184,12 +182,9 @@ export default function PropertyGrid() {
                     <FaRulerCombined /> {property.areaSqft}
                   </div>
                 </div>
-
-                <ButtonFill
-                  text="View Details"
-                  className="w-full mt-4"
-                  onClick={() => router.push(`/buy/${property.slug}`)}
-                />
+                <Link href={`/buy/${property.slug}`}>
+                  <ButtonFill text="View Details" className="w-full mt-4" />
+                </Link>
               </div>
             </div>
           ))}
@@ -198,11 +193,9 @@ export default function PropertyGrid() {
         {/* ✅ View All Button */}
         {properties.length > 4 && (
           <div className="flex justify-center mt-8">
-            <ButtonFill
-              text="View All"
-              onClick={() => router.push("/buy")}
-              className="px-6 py-2"
-            />
+            <Link href="/buy">
+              <ButtonFill text="View All" className="px-6 py-2" />
+            </Link>
           </div>
         )}
       </div>

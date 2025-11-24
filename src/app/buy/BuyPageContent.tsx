@@ -15,6 +15,7 @@ import LeadForm from "../../../components/LeadForm"; // ✅ your existing form
 import LeadFormModal from "../../../components/LeadPopup";
 import { useProperty } from "@/context/PropertyContext";
 import Select from "react-select";
+import Link from "next/link";
 
 interface Property {
   _id: string;
@@ -310,12 +311,9 @@ export default function BuyPageContent() {
                         <Home size={16} className="mr-1" /> {p.type}
                       </p>
                     )}
-
-                    <ButtonFill
-                      onClick={() => window.location.assign(`/buy/${p.slug}`)}
-                      text="View Details"
-                      className="w-full mt-4"
-                    />
+                    <Link href={`/buy/${p.slug}`}>
+                      <ButtonFill text="View Details" className="w-full mt-4" />
+                    </Link>
                   </div>
                 </motion.div>
               ))}

@@ -8,6 +8,7 @@ import Image from "next/image";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import ContactSidebar from "../../../components/ContactSidebar";
 import Navbar2 from "../../../components/Navbar2";
+import Link from "next/link";
 
 interface BlogPost {
   _id: string;
@@ -125,46 +126,42 @@ const Blogs = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
             {currentBlogs.map((blog) => (
-              <div
-                key={blog._id}
-                onClick={() => router.push(`/blogs/${blog.slug}`)}
-                className="bg-[var(--desktop-sidebar)] rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer group border border-gray-200"
-              >
-                {/* Image Section */}
-                <div className="relative w-full h-60 overflow-hidden">
-                  <Image
-                    src={blog.coverImage}
-                    alt={blog.title}
-                    fill
-                    className="object-fill group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                {/* Content Section */}
-                <div className="p-6 flex flex-col justify-between h-[200px]">
-                  <div>
-                    <h2 className="text-xl font-semibold mb-2 line-clamp-2 group-hover:text-[var(--primary-color)] transition-colors text-[var(--title)]">
-                      {blog.title}
-                    </h2>
-                    <p className="text-[var(--text)] text-sm mb-1">
-                      {new Date(blog.datePublished).toLocaleDateString()}
-                    </p>
-                    <p className="text-[var(--text)] text-sm">
-                      By <span className="font-medium">{blog.author}</span>
-                    </p>
+              <Link href={`/blogs/${blog.slug}`}>
+                <div
+                  key={blog._id}
+                  className="bg-[var(--desktop-sidebar)] rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer group border border-gray-200"
+                >
+                  {/* Image Section */}
+                  <div className="relative w-full h-60 overflow-hidden">
+                    <Image
+                      src={blog.coverImage}
+                      alt={blog.title}
+                      fill
+                      className="object-fill group-hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
 
-                  <button
-                    className="mt-4 self-start text-[var(--primary-color)] font-semibold hover:underline transition cursor-pointer"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      router.push(`/blogs/${blog.slug}`);
-                    }}
-                  >
-                    Read More →
-                  </button>
+                  {/* Content Section */}
+                  <div className="p-6 flex flex-col justify-between h-[200px]">
+                    <div>
+                      <h2 className="text-xl font-semibold mb-2 line-clamp-2 group-hover:text-[var(--primary-color)] transition-colors text-[var(--title)]">
+                        {blog.title}
+                      </h2>
+                      <p className="text-[var(--text)] text-sm mb-1">
+                        {new Date(blog.datePublished).toLocaleDateString()}
+                      </p>
+                      <p className="text-[var(--text)] text-sm">
+                        By <span className="font-medium">{blog.author}</span>
+                      </p>
+                    </div>
+                    <Link href={`/blogs/${blog.slug}`}>
+                      <button className="mt-4 self-start text-[var(--primary-color)] font-semibold hover:underline transition cursor-pointer">
+                        Read More →
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         )}
