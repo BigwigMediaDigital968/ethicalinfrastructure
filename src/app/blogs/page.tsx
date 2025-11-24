@@ -126,11 +126,8 @@ const Blogs = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
             {currentBlogs.map((blog) => (
-              <Link href={`/blogs/${blog.slug}`}>
-                <div
-                  key={blog._id}
-                  className="bg-[var(--desktop-sidebar)] rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer group border border-gray-200"
-                >
+              <Link href={`/blogs/${blog.slug}`} key={blog._id}>
+                <div className="bg-[var(--desktop-sidebar)] rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer group border border-gray-200">
                   {/* Image Section */}
                   <div className="relative w-full h-60 overflow-hidden">
                     <Image
