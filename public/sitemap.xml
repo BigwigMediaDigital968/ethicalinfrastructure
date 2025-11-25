@@ -161,4 +161,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://ethicalinfrastructure.vercel.app/blogs/residential-leasing-in-gurgaon-made-easy-with-ethical-infrastructures</loc>
+        <lastmod>2025-11-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
