@@ -182,7 +182,7 @@ export default function RootLayout({
       <body className={`${tinos.className} antialiased`}>
         {/* ✅ Google Analytics Script */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-3CRGRCBE0S"
+          src="https://www.googletagmanager.com/gtag/js?id=G-W8C8LM32TF"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -190,7 +190,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-3CRGRCBE0S');
+            gtag('config', 'G-W8C8LM32TF');
           `}
         </Script>
 
