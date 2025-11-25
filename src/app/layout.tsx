@@ -21,7 +21,7 @@ export default function RootLayout({
         {/* ✅ Google Site Verification */}
         <meta
           name="google-site-verification"
-          content="Q1CXFjS4LoeATJZZmDq3iUY5hpOgG2_16oPF_DVp_h0"
+          content="AFme-xhHRJUPSgBAh523Sn8uVOuWo-c6BAmIgLM7MFQ"
         />
         <Script
           id="realestate-schema"
