@@ -142,7 +142,7 @@ export default function BuyPageContent() {
       />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_IN" />
-      <link rel="canonical" href="https://www.eipl.co/buy" />
+      <link rel="canonical" href="https://www.ethicalinfrastructures.com/buy" />
       <title>Buy Property in Gurgaon – Luxury Homes & Builder Floors</title>
       <meta
         name="description"
