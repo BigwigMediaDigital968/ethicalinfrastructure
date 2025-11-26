@@ -1,22 +1,5 @@
 User-agent: * 
 Disallow: /admin
 Disallow: /login
-Disallow: /builders-association
-Disallow: /_next/static/css/65aa3619a1925c9d.css?dpl=dpl_EngKncZiBTV2N1AeTsJbiJ7b3j3L
-Disallow: /_next/static/css/018c7a09ec63ff91.css?dpl=dpl_EngKncZiBTV2N1AeTsJbiJ7b3j3L
-Disallow: /_next/static/css/66d9dcd39441f970.css?dpl=dpl_EngKncZiBTV2N1AeTsJbiJ7b3j3L
-Disallow: /_next/static/css/e7bc1e87cf2b20e9.css?dpl=dpl_EngKncZiBTV2N1AeTsJbiJ7b3j3L
-Disallow: /_next/static/css/0cd54441d5cc9677.css?dpl=dpl_EngKncZiBTV2N1AeTsJbiJ7b3j3L
-Disallow: /_next/static/css/63c7182515913e2f.css?dpl=dpl_EngKncZiBTV2N1AeTsJbiJ7b3j3L
-Disallow: /emaar
-Disallow: /trump
-Disallow: /godrej
-Disallow: /smartworld
-Disallow: /pioneer
-Disallow: /suncity
-Disallow: /hines
-Disallow: /favicon.ico
-Disallow: /vatika
-Disallow: /vipul
 
-Sitemap: https://www.eipl.co/
+Sitemap: https://www.ethicalinfrastructures.com/
