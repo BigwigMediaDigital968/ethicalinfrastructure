@@ -89,7 +89,10 @@ const Blogs = () => {
       />
       <meta property="og:type" content="article" />
       <meta property="og:locale" content="en_IN" />
-      <link rel="canonical" href="https://www.eipl.co/blogs" />
+      <link
+        rel="canonical"
+        href="https://www.ethicalinfrastructures.com/blogs"
+      />
       <title>Real Estate Blogs & Market Insights – Gurgaon</title>
       <meta
         name="description"

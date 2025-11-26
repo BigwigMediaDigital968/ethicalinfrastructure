@@ -41,7 +41,10 @@ const AboutHero = () => {
       />
       <meta property="og:type" content="profile" />
       <meta property="og:locale" content="en_IN" />
-      <link rel="canonical" href="https://www.eipl.co/about" />
+      <link
+        rel="canonical"
+        href="https://www.ethicalinfrastructures.com/about"
+      />
       <title>About Ethical Infrastructures – Trusted Realtors in Gurgaon</title>
       <meta
         name="description"

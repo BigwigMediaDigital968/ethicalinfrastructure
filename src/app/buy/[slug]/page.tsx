@@ -25,12 +25,12 @@ export async function generateMetadata({
     title: property.metatitle,
     description: property.metadescription,
     alternates: {
-      canonical: `https://www.eipl.co/buy/${property.slug}`,
+      canonical: `https://www.ethicalinfrastructures.com/buy/${property.slug}`,
     },
     openGraph: {
       title: property.metatitle,
       description: property.metadescription,
-      url: `https://www.eipl.co/buy/${property.slug}`,
+      url: `https://www.ethicalinfrastructures.com/buy/${property.slug}`,
       siteName: "Ethical Infrastructures Pvt Ltd",
       images: [
         {

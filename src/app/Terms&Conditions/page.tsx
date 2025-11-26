@@ -26,7 +26,10 @@ export default function TermsAndConditionsPage() {
       />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_IN" />
-      <link rel="canonical" href="https://www.eipl.co/Terms&Conditions" />
+      <link
+        rel="canonical"
+        href="https://www.ethicalinfrastructures.com/Terms&Conditions"
+      />
       <title>Terms & Conditions – Ethical Infrastructures</title>
       <meta
         name="description"
