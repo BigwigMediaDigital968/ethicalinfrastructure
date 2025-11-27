@@ -89,6 +89,13 @@ export default function Home() {
 
   return (
     <>
+      <title>
+        Ethical Infrastructures – Best Real Estate Company in Gurgaon
+      </title>
+      <meta
+        name="description"
+        content="Buy, sell, or lease premium properties in Gurgaon with Ethical Infrastructures – trusted, transparent, and expert real estate services."
+      />
       <Navbar />
       <Hero />
       <OurSegments />
@@ -99,7 +106,6 @@ export default function Home() {
       <ScrollingIcons />
       <Footer />
       <ScrollToTopButton />
-
       {/* --------------------- MOBILE CALL/WHATSAPP BAR --------------------- */}
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-[9999]">
         <div className="w-1/2 bg-[var(--primary-color)] text-white text-center py-3">
@@ -122,7 +128,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-
       {/* --------------------- POPUP MODAL --------------------- */}
       <AnimatePresence>
         {isModalOpen && (
@@ -150,7 +155,6 @@ export default function Home() {
           </motion.div>
         )}
       </AnimatePresence>
-
       {/* --------------------- GET IN TOUCH BUTTON --------------------- */}
       <AnimatePresence>
         {showSidebarButton && (
@@ -171,7 +175,6 @@ export default function Home() {
           </motion.button>
         )}
       </AnimatePresence>
-
       {/* --------------------- Sidebar --------------------- */}
       <div className="hidden md:block">
         <ContactSidebar />
