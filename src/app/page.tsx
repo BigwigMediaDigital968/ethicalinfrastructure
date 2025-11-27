@@ -89,6 +89,7 @@ export default function Home() {
 
   return (
     <>
+      <link rel="canonical" href="https://www.ethicalinfrastructures.com/" />
       <title>
         Ethical Infrastructures – Best Real Estate Company in Gurgaon
       </title>
