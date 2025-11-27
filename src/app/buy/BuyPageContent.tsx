@@ -131,7 +131,10 @@ export default function BuyPageContent() {
         content="Buy Property in Gurgaon – Luxury Homes & Builder Floors"
       />
       <meta property="og:site_name" content="Ethical Infrastructures Pvt Ltd" />
-      <meta property="og:url" content="https://www.eipl.co/buy" />
+      <meta
+        property="og:url"
+        content="https://www.ethicalinfrastructures.com/buy"
+      />
       <meta
         property="og:description"
         content="Explore luxury builder floors, villas, and apartments for sale in Gurgaon’s prime locations with Ethical Infrastructures."

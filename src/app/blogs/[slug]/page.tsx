@@ -82,11 +82,11 @@ export default async function BlogDetails({
       <meta property="og:type" content="article" />
       <meta
         property="og:url"
-        content={`https://www.eipl.co/blogs/${blog.slug}`}
+        content={`https://www.ethicalinfrastructures.com/blogs/${blog.slug}`}
       />
       <meta property="og:image" content={blog.coverImage} />
       <meta property="og:site_name" content="Ethical Infrastructures Pvt Ltd" />
-      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale" content="en_IN" />
 
       {/* Schema Markup */}
       {Array.isArray(blog.schemaMarkup) &&

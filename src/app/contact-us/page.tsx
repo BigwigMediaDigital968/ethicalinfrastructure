@@ -18,7 +18,10 @@ export default function ContactPage() {
         content="Contact Ethical Infrastructures – Gurgaon Real Estate Experts"
       />
       <meta property="og:site_name" content="Ethical Infrastructures Pvt Ltd" />
-      <meta property="og:url" content="https://www.eipl.co/contact-us" />
+      <meta
+        property="og:url"
+        content="https://www.ethicalinfrastructures.com/contact-us"
+      />
       <meta
         property="og:description"
         content="Get in touch with Ethical Infrastructures for buying, selling, or leasing premium properties in Gurgaon."

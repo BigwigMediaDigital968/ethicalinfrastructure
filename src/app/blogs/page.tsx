@@ -78,7 +78,10 @@ const Blogs = () => {
         content="Real Estate Blogs & Market Insights – Gurgaon"
       />
       <meta property="og:site_name" content="Ethical Infrastructures Pvt Ltd" />
-      <meta property="og:url" content="https://www.eipl.co/blogs" />
+      <meta
+        property="og:url"
+        content="https://www.ethicalinfrastructures.com/blogs"
+      />
       <meta
         property="og:description"
         content="Read expert blogs on Gurgaon real estate, property trends, and investment insights from Ethical Infrastructures."

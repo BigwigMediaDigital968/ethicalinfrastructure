@@ -13,7 +13,10 @@ export default function PrivacyPolicyPage() {
         content="Privacy Policy – Ethical Infrastructures"
       />
       <meta property="og:site_name" content="Ethical Infrastructures Pvt Ltd" />
-      <meta property="og:url" content="https://www.eipl.co/Privacy&Policy" />
+      <meta
+        property="og:url"
+        content="https://www.ethicalinfrastructures.com/Privacy&Policy"
+      />
       <meta
         property="og:description"
         content="Learn how Ethical Infrastructures protects your data and ensures secure real estate transactions in Gurgaon."

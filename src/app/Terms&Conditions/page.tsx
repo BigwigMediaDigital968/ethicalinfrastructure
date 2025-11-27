@@ -15,7 +15,10 @@ export default function TermsAndConditionsPage() {
         content="Terms & Conditions – Ethical Infrastructures"
       />
       <meta property="og:site_name" content="Ethical Infrastructures Pvt Ltd" />
-      <meta property="og:url" content="https://www.eipl.co/Terms&Conditions" />
+      <meta
+        property="og:url"
+        content="https://www.ethicalinfrastructures.com/Terms&Conditions"
+      />
       <meta
         property="og:description"
         content="Review the terms and conditions for Ethical Infrastructures’ trusted real estate services in Gurgaon."
