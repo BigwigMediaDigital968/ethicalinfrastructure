@@ -89,6 +89,27 @@ export default function Home() {
 
   return (
     <>
+      {/* Open Graph Meta Tags */}
+      <meta
+        property="og:title"
+        content="Ethical Infrastructures Pvt Ltd | Real Estate in Gurugram"
+      />
+      <meta property="og:site_name" content="Ethical Infrastructures Pvt Ltd" />
+      <meta
+        property="og:url"
+        content="https://www.ethicalinfrastructures.com/"
+      />
+      <meta
+        property="og:description"
+        content="Discover trusted real estate solutions in Gurugram with Ethical Infrastructures. Expert guidance for residential, commercial, and industrial properties."
+      />
+      <meta
+        property="og:image"
+        content="https://www.ethicalinfrastructures.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.634a2fe3.png&w=256&q=75"
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_IN" />
+
       <link rel="canonical" href="https://www.ethicalinfrastructures.com/" />
       <title>
         Ethical Infrastructures – Best Real Estate Company in Gurgaon
