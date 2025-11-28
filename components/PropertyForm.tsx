@@ -33,9 +33,10 @@ interface PropertyData {
   extraHighlights: string[];
   googleMapUrl: string;
   videoLink: string;
+  instagramLink?: string; // ⭐ NEW
   images: string[];
   builder: string;
-  metatitle?: string; // ✅ new field
+  metatitle?: string;
   metadescription?: string;
 }
 
@@ -70,6 +71,7 @@ export default function PropertyForm({
     areaSqft: "",
     googleMapUrl: "",
     videoLink: "",
+    instagramLink: "",
     builder: "",
     metatitle: "", // ✅ initialize
     metadescription: "",
@@ -101,6 +103,7 @@ export default function PropertyForm({
         areaSqft: property.areaSqft,
         googleMapUrl: property.googleMapUrl,
         videoLink: property.videoLink,
+        instagramLink: property.instagramLink || "",
         builder: property.builder,
         metatitle: property.metatitle || "", // ✅ prefill
         metadescription: property.metadescription || "",
@@ -453,6 +456,13 @@ export default function PropertyForm({
           className="mt-2"
         />
       </div>
+      <InputField
+        name="instagramLink"
+        type="text"
+        placeholder="Instagram Post / Reel Link"
+        value={formData.instagramLink || ""}
+        onChange={handleChange}
+      />
 
       {/* Buttons */}
       <div className="flex justify-end gap-4 mt-6">
