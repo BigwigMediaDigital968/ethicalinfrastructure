@@ -8,7 +8,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import { motion } from "framer-motion";
 import ContactInfo from "../../../components/ContactInfo";
-import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import ContactSidebar from "../../../components/ContactSidebar";
 import ButtonFill from "../../../components/Button";
 import LeadForm from "../../../components/LeadForm"; // ✅ your existing form
@@ -311,15 +311,8 @@ export default function BuyPageContent() {
                           className="ml-2 text-pink-600 hover:text-pink-700"
                           title="View Instagram Post"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="22"
-                            height="22"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z" />
-                          </svg>
+                          <FaInstagram className="text-2xl" />{" "}
+                          {/* Increase size here */}
                         </a>
                       )}
                     </div>
