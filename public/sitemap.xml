@@ -41,18 +41,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.ethicalinfrastructures.com/Terms&Conditions</loc>
-    <lastmod>2025-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.ethicalinfrastructures.com/Privacy&Policy</loc>
-    <lastmod>2025-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+ <url>
+  <loc>https://www.ethicalinfrastructures.com/Terms&amp;Conditions</loc>
+  <lastmod>2025-11-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://www.ethicalinfrastructures.com/Privacy&amp;Policy</loc>
+  <lastmod>2025-11-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
   <url>
     <loc>https://www.ethicalinfrastructures.com/buy/502-sqyds-dlf-phase-1</loc>
     <lastmod>2025-11-26</lastmod>
