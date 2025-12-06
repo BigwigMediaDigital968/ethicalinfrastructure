@@ -34,12 +34,20 @@ export default function PropertyGrid() {
 
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+    const featuredSlugs = [
+      "dlf-the-magnolias",
+      "dlf-the-aralias",
+      "dlf-the-camellias",
+      "dlf-the-belaire",
+    ];
+    const slugQuery = featuredSlugs.join(",");
 
     const fetchProperties = async () => {
       try {
         const res = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_BASE}/property`
+          `${process.env.NEXT_PUBLIC_API_BASE}/property/featured?slugs=${slugQuery}`
         );
+        console.log(res.data);
         setProperties(res.data.properties);
       } catch (err) {
         console.error("Failed to fetch properties:", err);
@@ -51,6 +59,8 @@ export default function PropertyGrid() {
     fetchProperties();
   }, []);
 
+  // Show only first 4 (or remove .slice if you want all filtered items)
+
   if (loading)
     return <p className="text-center py-12">Loading properties...</p>;
   if (!properties.length)
@@ -58,7 +68,6 @@ export default function PropertyGrid() {
 
   // Always show only top 4 properties
   const displayedProperties = properties.slice(0, 4);
-
   return (
     <section className="py-12 bg-[var(--white)]">
       <div className="w-11/12 md:w-5/6 mx-auto">
@@ -191,7 +200,7 @@ export default function PropertyGrid() {
         </div>
 
         {/* ✅ View All Button */}
-        {properties.length > 4 && (
+        {properties.length && (
           <div className="flex justify-center mt-8">
             <Link href="/buy">
               <ButtonFill text="View All" className="px-6 py-2" />
