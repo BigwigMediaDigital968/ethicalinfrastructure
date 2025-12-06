@@ -88,15 +88,79 @@ export default async function BlogDetails({
       <meta property="og:site_name" content="Ethical Infrastructures Pvt Ltd" />
       <meta property="og:locale" content="en_IN" />
 
+      {/* ================== AUTO BREADCRUMB SCHEMA ================== */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.ethicalinfrastructures.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Blogs",
+                item: "https://www.ethicalinfrastructures.com/blogs",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: blog.title,
+                item: `https://www.ethicalinfrastructures.com/blogs/${blog.slug}`,
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* ================== AUTO ARTICLE SCHEMA ================== */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://www.ethicalinfrastructures.com/blogs/${blog.slug}`,
+            },
+            headline: blog.title,
+            description: blog.excerpt,
+            image: [blog.coverImage],
+            author: {
+              "@type": "Person",
+              name: blog.author || "Team Ethical Infrastructures",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Ethical Infrastructures",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://www.ethicalinfrastructures.com/logo.png",
+              },
+            },
+            url: `https://www.ethicalinfrastructures.com/blogs/${blog.slug}`,
+            datePublished: blog.datePublished,
+            dateModified: blog.datePublished,
+          }),
+        }}
+      />
+
       {/* Schema Markup */}
-      {Array.isArray(blog.schemaMarkup) &&
+      {/* {Array.isArray(blog.schemaMarkup) &&
         blog.schemaMarkup.map((markup, idx) => (
           <script
             key={idx}
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: markup }}
           />
-        ))}
+        ))} */}
 
       <Navbar2 />
 
