@@ -35,10 +35,10 @@ export default function PropertyGrid() {
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
     const featuredSlugs = [
-      "dlf-the-magnolias",
-      "dlf-the-aralias",
-      "dlf-the-camellias",
+      "krrish-provence-estate",
+      "502-sqyds-dlf-phase-1",
       "dlf-the-belaire",
+      "300-sqyd-sushant-lok-1",
     ];
     const slugQuery = featuredSlugs.join(",");
 
@@ -47,8 +47,15 @@ export default function PropertyGrid() {
         const res = await axios.get(
           `${process.env.NEXT_PUBLIC_API_BASE}/property/featured?slugs=${slugQuery}`
         );
-        console.log(res.data);
-        setProperties(res.data.properties);
+
+        // Sort properties based on slug order
+        const ordered = featuredSlugs
+          .map((slug) =>
+            res.data.properties.find((p: Property) => p.slug === slug)
+          )
+          .filter(Boolean);
+
+        setProperties(ordered);
       } catch (err) {
         console.error("Failed to fetch properties:", err);
       } finally {
