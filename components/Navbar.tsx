@@ -360,7 +360,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaFacebookF className="cursor-pointer text-gray-700 hover:text-[var(--primary-color)] transition text-2xl" />
+                    <FaFacebookF className="cursor-pointer text-gray-700 hover:text-blue-600 transition text-2xl" />
                   </a>
 
                   <a
