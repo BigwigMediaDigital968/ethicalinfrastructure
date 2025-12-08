@@ -299,30 +299,6 @@ const AboutHero = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="py-16">
-        <div className="w-11/12 md:w-5/6 mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12">Our Core Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {["Integrity", "Excellence", "Innovation"].map((value) => (
-              <div
-                key={value}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
-              >
-                <div className="text-blue-600 mb-4">
-                  <Building2 size={48} />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{value}</h3>
-                <p className="text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-[9999]">
         <div className="w-1/2 bg-[var(--primary-color)] text-white text-center py-3">
           <a

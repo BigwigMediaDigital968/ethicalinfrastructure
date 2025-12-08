@@ -254,16 +254,6 @@ function Sell() {
         </div>
       )}
 
-      {/* <div className="bg-[var(--primary-color)] text-white text-center py-10 px-4 mt-12">
-        <h2 className="text-3xl font-bold mb-4">
-          Ready to Start Your Dream Project?
-        </h2>
-        <p className="max-w-2xl mx-auto mb-6 text-lg">
-          Let’s bring your vision to life with our expert team. Get in touch
-          today and take the first step toward your future.
-        </p>
-      </div> */}
-
       <div className="fixed bottom-0 left-0 w-full flex md:hidden z-[9999]">
         <div className="w-1/2 bg-[var(--primary-color)] text-white text-center py-3">
           <a

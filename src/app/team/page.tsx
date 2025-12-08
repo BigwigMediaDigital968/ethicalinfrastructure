@@ -118,32 +118,6 @@ export default function TeamPage() {
             </div>
           </div>
         </section>
-
-        {/* <div className="relative w-full flex justify-center">
-          <div className="absolute top-1/2 transform -translate-y-1/2 w-full h-20 bg-orange-500 -z-10"></div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-11/12 md:w-4/5">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition"
-              >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={400}
-                  height={400}
-                  className="object-fill w-full h-80"
-                />
-                <div className="text-center p-6">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {member.name}
-                  </h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
       </div>
       <Footer />
     </div>

@@ -184,11 +184,6 @@ export default function BuyDetails() {
 
           {/* Badges */}
           <div className="flex flex-wrap gap-3">
-            {/* {property.purpose && (
-              <span className="px-4 py-2 bg-gray-100  rounded-lg shadow flex items-center gap-2 text-gray-800">
-                <Home size={18} /> {property.purpose}
-              </span>
-            )} */}
             {property.bedrooms && (
               <span className="px-4 py-2 bg-gray-100  rounded-lg shadow flex items-center gap-2 text-gray-800">
                 <BedDouble size={18} /> {property.bedrooms} Beds

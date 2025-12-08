@@ -26,28 +26,6 @@ const RealEstateExperts: React.FC = () => {
             className="w-full"
             draggable="false"
           />
-
-          {/* Mobile stats overlay
-          <div className="absolute bottom-0 w-full md:hidden bg-white/90 dark:bg-black/80 flex justify-around py-4 text-center">
-            <div>
-              <h3 className="text-lg font-semibold">5000+</h3>
-              <p className="text-xs text-[var(--text)]">
-                Listed Properties
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold">7+</h3>
-              <p className="text-xs text-[var(--text)]">
-                Languages Spoken
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold">120+</h3>
-              <p className="text-xs text-[var(--text)]">
-                Consultants
-              </p>
-            </div>
-          </div> */}
         </div>
 
         {/* Text and stats */}
@@ -86,57 +64,6 @@ const RealEstateExperts: React.FC = () => {
           <ButtonFill onClick={() => setShowModal(true)} text="Get In Touch" />
         </div>
       </div>
-      {/* Desktop stats */}
-      {/* <div className="grid grid-cols-3 md:grid-cols-6 text-center gap-6 w-11/12 mx-auto">
-        <div>
-          <FaBuilding className="text-2xl mb-2 mx-auto text-[var(--primary-color)]" />
-          <h3 className="text-2xl font-sans">3,500+</h3>
-          <p className="text-sm text-[var(--text)] mt-2 whitespace-pre-wrap">
-            {"Verified Properties \n Across Gurugram & Delhi NCR"}
-          </p>
-        </div>
-
-        <div>
-          <FaUsers className="text-2xl mb-2 mx-auto text-[var(--primary-color)]" />
-          <h3 className="text-2xl font-sans">2,000+</h3>
-          <p className="text-sm text-[var(--text)] mt-2 whitespace-pre-wrap">
-            {"Happy Clients \n Served With Trust"}
-          </p>
-        </div>
-
-        <div>
-          <FaHandshake className="text-2xl mb-2 mx-auto text-[var(--primary-color)]" />
-          <h3 className="text-2xl font-sans">1,200+</h3>
-          <p className="text-sm text-[var(--text)] mt-2 whitespace-pre-wrap">
-            {"Successful Property \n Transactions"}
-          </p>
-        </div>
-
-        <div>
-          <FaHome className="text-2xl mb-2 mx-auto text-[var(--primary-color)]" />
-          <h3 className="text-2xl font-sans">1,000+</h3>
-          <p className="text-sm text-[var(--text)] mt-2 whitespace-pre-wrap">
-            {"Homes Bought \n & Sold Seamlessly"}
-          </p>
-        </div>
-
-        <div>
-          <FaChartLine className="text-2xl mb-2 mx-auto text-[var(--primary-color)]" />
-          <h3 className="text-2xl font-sans">₹1,500+ Cr</h3>
-          <p className="text-sm text-[var(--text)] mt-2 whitespace-pre-wrap">
-            {"Worth of Properties \n Managed & Sold"}
-          </p>
-        </div>
-
-        <div>
-          <FaGlobe className="text-2xl mb-2 mx-auto text-[var(--primary-color)]" />
-          <h3 className="text-2xl font-sans">15+</h3>
-          <p className="text-sm text-[var(--text)] mt-2 whitespace-pre-wrap">
-            {"Years of Expertise \n in Real Estate Consulting"}
-          </p>
-        </div>
-      </div> */}
-
       <LeadFormModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );

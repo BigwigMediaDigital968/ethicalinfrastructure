@@ -117,10 +117,6 @@ const LeadForm: React.FC = () => {
         <h3 className="text-3xl md:text-4xl font-bold mt-2 mb-6 tracking-widest text-[var(--primary-color)]">
           Get In Touch
         </h3>
-        {/* <p className="text-3xl md:text-4xl font-bold mt-2 mb-6 tracking-widest text-[var(--title)]">
-          Reach us in a few clicks
-        </p> */}
-
         <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
           {/* Name */}
           <input
