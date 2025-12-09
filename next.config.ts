@@ -14,6 +14,13 @@ const nextConfig: NextConfig = {
           "/blogs/real-estate-company-in-gurgaon-presenting-top-residential-projects",
         permanent: true, // 301 SEO redirect
       },
+      {
+        source:
+          "/blogs/buy-builder-floor-in-gurgaon-ethical-infrastructures-pvt-ltd-phase-4",
+        destination:
+          "/blogs/buy-builder-floor-in-gurgaon-ethical-infrastructures-pvt-ltd",
+        permanent: true, // 301 SEO redirect
+      },
     ];
   },
 };
