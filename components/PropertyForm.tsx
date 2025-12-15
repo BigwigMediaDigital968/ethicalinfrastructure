@@ -277,6 +277,7 @@ export default function PropertyForm({
             <option value="Apartment">Apartment</option>
             <option value="Villa">Villa</option>
             <option value="Farmhouse">Farmhouse</option>
+            <option value="Plot">Plot</option>
           </select>
         </div>
 
