@@ -20,6 +20,8 @@ import OurSegments from "../../components/OurSegments";
 import LeadFormWithoutImage from "../../components/LeadPopupwithoutImage";
 
 import { motion, AnimatePresence } from "framer-motion";
+import FAQ from "../../components/FAQ";
+import AboutHighlight from "../../components/AboutHighlight";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -121,10 +123,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <OurSegments />
+      <AboutHighlight />
       <PropertyGrid />
       <BuyLeaseSection />
       <WeHelp />
       <Testimonials />
+      <FAQ />
       <ScrollingIcons />
       <Footer />
       <ScrollToTopButton />

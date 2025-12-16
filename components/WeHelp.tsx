@@ -1,5 +1,5 @@
 import React from "react";
-import { Building2, Home, KeyRound } from "lucide-react"; // Lucide icons
+import { Building2, Home, KeyRound } from "lucide-react";
 
 type Service = {
   icon: React.ReactNode;
@@ -15,7 +15,7 @@ const services: Service[] = [
     label: "Buy Property",
     title: "Buy Property",
     description:
-      "Discover premium builder floors, villas, farmhouses, apartments, and commercial properties across Delhi NCR with ETHICAL INFRASTRUCTURES PRIVATE LIMITED. Our experts help you find the perfect home or investment property that fits your lifestyle, budget, and vision ensuring transparency and smooth transactions at every step.",
+      "Explore premium residential and commercial options including builder floors, villas, farmhouses and apartments across Delhi NCR. Our team of experts assists you at every step, ensuring ethical guidance, market-accurate insights and smooth transactions. If you're searching for a property dealer or broker in Gurgaon, we provide unmatched support for investment and home-buying decisions.",
     redirected: "/buy",
   },
   {
@@ -23,7 +23,7 @@ const services: Service[] = [
     label: "Sell Property",
     title: "Sell Property",
     description:
-      "Looking to sell your property? Our experienced consultants provide accurate market evaluations, professional marketing strategies, and connect you with serious buyers to ensure quick and profitable sales. We manage the entire process with utmost professionalism and integrity.",
+      "Sell your property faster with professional evaluation, strategic marketing and access to genuine buyers. Our consultants understand market trends, negotiate effectively and ensure transparent dealings, making us one of the most trusted property dealer agents in Gurgaon.",
     redirected: "/sell",
   },
   {
@@ -31,7 +31,7 @@ const services: Service[] = [
     label: "Lease Property",
     title: "Lease Property",
     description:
-      "Whether you're a landlord seeking reliable tenants or a client looking for a leased property, ETHICAL INFRASTRUCTURES PRIVATE LIMITED simplifies the leasing process. We provide verified listings, handle documentation, and ensure fair, transparent agreements for both parties.",
+      "We simplify leasing for landlords and tenants with verified listings, fair agreements and smooth documentation. Whether it’s residential or commercial leasing, Ethical Infrastructures ensures transparency and reliability at every step.",
     redirected: "/lease",
   },
 ];

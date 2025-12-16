@@ -11,7 +11,7 @@ const ScrollToTopButton = () => {
     const progress = (scrollTop / docHeight) * 100;
 
     setScrollPercent(progress);
-    setIsVisible(scrollTop > 100); // show button after 100px scroll
+    setIsVisible(scrollTop > 100);
   };
 
   const scrollToTop = () => {
@@ -37,7 +37,7 @@ const ScrollToTopButton = () => {
              a 15.9155 15.9155 0 0 1 0 31.831
              a 15.9155 15.9155 0 0 1 0 -31.831"
           fill="none"
-          stroke="#0a2342"
+          stroke="#ce9c81"
           strokeWidth="2"
           strokeDasharray="100, 100"
           strokeDashoffset={`${100 - scrollPercent}`}

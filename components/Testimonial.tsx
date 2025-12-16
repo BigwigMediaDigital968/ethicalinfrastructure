@@ -8,51 +8,61 @@ import { FaQuoteLeft } from "react-icons/fa";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ButtonFill from "./Button";
+import LeadFormModal from "./LeadPopup";
+import { useState } from "react";
 
 const testimonials = [
   {
     name: "Pulkit Sharma",
     message:
-      "ETHICAL INFRASTRUCTURES made buying my dream apartment in Gurugram effortless. The team guided me at every step and ensured a transparent and smooth process.",
+      "Ethical Infrastructures truly lives up to its name. Their team guided me through the entire buying process with honesty and professionalism. If anyone is searching for the best property dealer in Gurgaon, I highly recommend their services.",
   },
   {
     name: "Kirti Bedi",
     message:
-      "Selling my property was never this easy! The consultants provided professional advice, connected me with serious buyers, and handled all documentation seamlessly.",
+      "As a first-time homebuyer, I was nervous, but their consultants made everything smooth and transparent. Their expertise clearly shows why they are among the top property dealer agents in Gurgaon",
   },
   {
     name: "Saurav Sharma",
     message:
-      "Leasing a commercial space was quick and hassle-free thanks to their experienced team. They helped me find the right property that fit my budget and requirements.",
+      "I sold my builder floor through Ethical Infrastructures and received more than my expected price. A reliable and result-driven property dealer broker in Gurgaon who understands the market extremely well.",
   },
   {
     name: "Anita Desai",
     message:
-      "I highly recommend ETHICAL INFRASTRUCTURES. Their attention to detail, market knowledge, and honest guidance made my property investment worry-free.",
+      "What stood out was their ethical approach and clear communication. They helped me lease my property quickly. Definitely the best property dealer in Gurgaon for anyone looking for trustworthy real estate support.",
   },
   {
     name: "Rahul Verma",
     message:
-      "From the first site visit to closing the deal, the team provided excellent support. Their professionalism and responsiveness are unmatched.",
+      "The team understood exactly what I was looking for and shortlisted the perfect properties within my budget. They are truly excellent property dealer agents in Gurgaon for premium residential options.",
   },
   {
     name: "Priya Kapoor",
     message:
-      "Finding a leased home for my family was seamless. They offered a wide selection of verified listings and guided us through legal formalities efficiently.",
+      "Professional, responsive, and knowledgeable. Ethical Infrastructures made my commercial property investment completely hassle-free. Easily the most dependable property dealer broker in Gurgaon.",
   },
   {
     name: "Raj Singh",
     message:
-      "Buying my commercial property in Delhi NCR was a smooth experience. The team’s insights and market research helped me make the right decision.",
+      "They provided genuine listings, handled documentation smoothly, and guided the entire process with complete transparency. Truly the best property dealer in Gurgaon if you want ethical and seamless transactions.",
   },
   {
     name: "Neha Gupta",
     message:
-      "The consultants are knowledgeable, patient, and extremely helpful. They ensured that all my questions were answered and the process was transparent.",
+      "I contacted several agents before, but none matched the professionalism of Ethical Infrastructures. They are highly experienced property dealer agents in Gurgaon who always prioritize their clients.",
+  },
+  {
+    name: "Arjun Dixit",
+    message:
+      "From market evaluation to final closing, they managed the entire selling process flawlessly. If you need a trustworthy property dealer broker in Gurgaon, this company is the right choice.",
   },
 ];
 
 export default function Testimonials() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -60,6 +70,7 @@ export default function Testimonials() {
       once: true,
     });
   }, []);
+
   return (
     <section className="w-full py-12 font-raleway relative">
       <div className="w-11/12 md:w-5/6 mx-auto">
@@ -96,21 +107,17 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
               <div className="bg-[var(--featured)] rounded-2xl border border-neutral-200 p-6 shadow-md h-72 flex flex-col justify-between hover:shadow-lg transition duration-300 relative">
-                {/* Quote Icon */}
                 <FaQuoteLeft className="text-[var(--primary-color)] text-3xl opacity-30 mb-3" />
 
-                {/* Message */}
                 <p className="text-base leading-relaxed text-[var(--text)] font-annie line-clamp-5">
                   {testimonial.message}
                 </p>
 
-                {/* Footer */}
                 <div className="mt-6 flex items-center justify-between">
                   <h3 className="text-sm font-bold uppercase tracking-wide text-[var(--primary-color)]">
                     — {testimonial.name}
                   </h3>
 
-                  {/* Initials Avatar */}
                   <div className="w-10 h-10 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center text-sm font-bold uppercase">
                     {testimonial.name
                       .split(" ")
@@ -122,7 +129,34 @@ export default function Testimonials() {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* ✅ CTA Section */}
+        <div
+          className="mt-12 text-center bg-[var(--desktop-sidebar)] rounded-2xl p-10 shadow-md"
+          data-aos="fade-up"
+        >
+          <h3 className="text-2xl md:text-3xl font-bold tracking-widest text-[var(--title)]">
+            Get a Free Consultation Today
+          </h3>
+
+          <p className="mt-4 text-[var(--text)] max-w-2xl mx-auto">
+            Speak with our experienced property consultants and get personalized
+            guidance for buying, selling, or investing in Gurgaon’s prime real
+            estate locations.
+          </p>
+
+          <div className="mt-6 flex justify-center">
+            <ButtonFill
+              text="Book Free Consultation"
+              onClick={() => setIsModalOpen(true)}
+            />
+          </div>
+        </div>
       </div>
+      <LeadFormModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 }
