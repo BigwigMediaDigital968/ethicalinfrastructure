@@ -71,7 +71,7 @@ const Blogs = () => {
   const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
 
   return (
-    <div className="min-h-screen py-32">
+    <div className="min-h-screen pt-20 pb-20 lg:pb-0 lg:pt-32">
       {/* <!-- Open Graph Meta Tags --> */}
       <meta
         property="og:title"
