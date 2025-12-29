@@ -1,5 +1,25 @@
 User-agent: * 
 Disallow: /admin
 Disallow: /login
+Disallow: /zaga-construction
+Disallow: /zaga-construction/
+Disallow: /suncity
+Disallow: /mnb
+Disallow: /news
+Disallow: /news/
+Disallow: /salcon
+Disallow: /trump
+Disallow: /vipul
+Disallow: /dlf
+Disallow: /builders-association
+Disallow: /smartworld
+Disallow: /conscient
+Disallow: /vatika
+Disallow: /ireo
+Disallow: /hines
+Disallow: /pioneer
+Disallow: /mahindra
+Disallow: /favicon.ico
 
-Sitemap: https://www.ethicalinfrastructures.com/
+
+Sitemap: https://www.ethicalinfrastructures.com/sitemap.xml
