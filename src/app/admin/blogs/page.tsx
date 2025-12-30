@@ -57,6 +57,11 @@ export default function AdminBlogsPage() {
     }
   };
 
+  const stripHtml = (html: string) => {
+    if (!html) return "";
+    return html.replace(/<[^>]*>?/gm, "");
+  };
+
   useEffect(() => {
     // ✅ Check login status
     const loggedIn = localStorage.getItem("isAdmin");
@@ -202,11 +207,10 @@ export default function AdminBlogsPage() {
                   className="even:bg-[#111] hover:bg-[#222] transition"
                 >
                   <td className="px-3 py-2">{blog.title}</td>
-                  <td className="px-3 py-2 max-w-[200px] truncate">
-                    <div
-                      className="line-clamp-3 text-gray-300"
-                      dangerouslySetInnerHTML={{ __html: blog.content }}
-                    />
+                  <td className="px-3 py-2 max-w-[200px]">
+                    <div className="line-clamp-3 text-gray-300">
+                      {stripHtml(blog.content)}
+                    </div>
                   </td>
                   <td className="px-3 py-2">{blog.author}</td>
                   <td className="px-3 py-2">

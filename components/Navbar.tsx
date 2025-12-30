@@ -355,37 +355,37 @@ const Navbar = () => {
                   Our social
                 </h3>
                 <div className="flex items-center gap-4">
-                  <a
+                  <Link
                     href="https://www.facebook.com/profile.php?id=61581857552733"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaFacebookF className="cursor-pointer text-gray-700 hover:text-blue-600 transition text-2xl" />
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="https://www.linkedin.com/company/109224060/admin/dashboard/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaLinkedinIn className="cursor-pointer text-gray-700 hover:text-blue-400 transition text-2xl" />
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="https://www.instagram.com/ethical.infrastructure?igsh=MXh4NWVpbmw5eTg0eQ%3D%3D&utm_source=qr"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaInstagram className="cursor-pointer text-gray-700 hover:text-pink-400 transition text-2xl" />
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="https://www.youtube.com/channel/UC_PoUpH4pZvbWr7oTE8-BqQ"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaYoutube className="cursor-pointer text-gray-700 hover:text-red-600 transition text-2xl" />
-                  </a>
+                  </Link>
                 </div>
               </div>
 
