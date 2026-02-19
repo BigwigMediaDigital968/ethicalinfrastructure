@@ -33,7 +33,7 @@ const Blogs = () => {
     setLoading(true);
     try {
       const res = await axios.get<BlogPost[]>(
-        `${process.env.NEXT_PUBLIC_API_BASE}/blog/viewblog`
+        `${process.env.NEXT_PUBLIC_API_BASE}/blog/viewblog`,
       );
       setBlogs(res.data);
       setFilteredBlogs(res.data);
@@ -132,7 +132,11 @@ const Blogs = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
             {currentBlogs.map((blog) => (
-              <Link href={`/blogs/${blog.slug}`} key={blog._id}>
+              <Link
+                href={`/blogs/${blog.slug}`}
+                key={blog._id}
+                className="bg-[var(--desktop-sidebar)] rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer group border border-gray-200 block"
+              >
                 <div className="bg-[var(--desktop-sidebar)] rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer group border border-gray-200">
                   {/* Image Section */}
                   <div className="relative w-full h-60 overflow-hidden">
@@ -157,11 +161,9 @@ const Blogs = () => {
                         By <span className="font-medium">{blog.author}</span>
                       </p>
                     </div>
-                    <Link href={`/blogs/${blog.slug}`}>
-                      <button className="mt-4 self-start text-[var(--primary-color)] font-semibold hover:underline transition cursor-pointer">
-                        Read More →
-                      </button>
-                    </Link>
+                    <span className="mt-4 self-start text-[var(--primary-color)] font-semibold hover:underline transition">
+                      Read More →
+                    </span>
                   </div>
                 </div>
               </Link>
