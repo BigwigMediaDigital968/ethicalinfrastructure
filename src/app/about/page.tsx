@@ -13,6 +13,8 @@ import "aos/dist/aos.css";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import ContactSidebar from "../../../components/ContactSidebar";
 import founder from "../../../assets/founder.png";
+import coFounder from "../../../assets/co-founder.jpeg";
+
 
 const AboutHero = () => {
   useEffect(() => {
@@ -166,6 +168,35 @@ const AboutHero = () => {
             <span className="mt-6 block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
               — Mr. Sorabh Chopra, Founder
             </span>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-8">
+          
+
+          {/* Founder Statement */}
+          <div className="flex flex-col col-span-2 justify-center text-[var(--text)]">
+            <p
+              className="text-xl  leading-relaxed italic font-light text-[var(--text)]"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              “With a strong vision and a passion for the real estate industry, I began my journey in 1992 with a commitment to making home buying a transparent, reliable, and rewarding experience for everyone. Over the years, my experience and understanding of customer needs inspired me to establish
+              <strong> Ethical Infrastructures Pvt. Ltd.</strong> in 2007. Built on the core values of integrity, quality, and customer satisfaction, our company strives to turn the dream of homeownership into reality by providing homes that offer comfort, happiness, and lasting trust to every family.”
+            </p>
+            <span className="mt-6 block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
+             — Mr. Rohit, Joint Managing Director
+            </span>
+          </div>
+
+          {/* Founder Card */}
+          <div className="rounded-xl col-span-1 overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white">
+            <Image
+              src={coFounder}
+              alt="Co Founder"
+              className="w-full h-[70vh] object-cover"
+              data-aos="zoom-in"
+              data-aos-delay="800"
+            />
           </div>
         </div>
       </section>
