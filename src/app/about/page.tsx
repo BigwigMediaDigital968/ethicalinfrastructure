@@ -184,7 +184,7 @@ const AboutHero = () => {
               <strong> Ethical Infrastructures Pvt. Ltd.</strong> in 2007. Built on the core values of integrity, quality, and customer satisfaction, our company strives to turn the dream of homeownership into reality by providing homes that offer comfort, happiness, and lasting trust to every family.”
             </p>
             <span className="mt-6 block font-semibold text-[var(--primary-color)] text-lg md:text-xl">
-             — Mr. Rohit, Joint Managing Director
+             — Mr. Rohit Ahuja, Joint Managing Director
             </span>
           </div>
 
